@@ -44,3 +44,6 @@ wheels/
 
 # Datasets
 **/data_deepobs
+
+# Nix
+**/.direnv/
