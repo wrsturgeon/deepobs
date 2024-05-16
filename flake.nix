@@ -156,7 +156,7 @@
                 nativeBuildInputs = with pkgs; [ makeWrapper ];
               }
             }/bin/run";
-          }) { prepare-data = "source ${./.}/deepobs/scripts/deepobs_prepare_data.sh"; };
+          }) { prepare-data = "source ${src}/deepobs/scripts/deepobs_prepare_data.sh"; };
           devShells.default = pkgs.mkShell { packages = [ (python pkgs pypkgs) ]; };
           packages.default = self.lib.with-pkgs pkgs pypkgs;
         }
