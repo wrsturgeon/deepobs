@@ -2,17 +2,21 @@
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    src = {
+      flake = false;
+      url = "github:fsschneider/deepobs/develop";
+    };
   };
   outputs =
     {
       flake-utils,
       nixpkgs,
       self,
+      src,
     }:
     let
       pname = "deepobs";
       version = "1.1.2";
-      src = ./.;
       mac-linux =
         pkgs: when-mac: when-linux:
         if pkgs.stdenv.isDarwin then

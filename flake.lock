@@ -37,7 +37,25 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "src": "src"
+      }
+    },
+    "src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636194039,
+        "narHash": "sha256-QGbRP9FFpddsy0J+8CsmGliAy8xXata0unhUag6Gp30=",
+        "owner": "fsschneider",
+        "repo": "deepobs",
+        "rev": "9782c0b8f52e4061b6853c165639646d2ec41a8b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fsschneider",
+        "ref": "develop",
+        "repo": "deepobs",
+        "type": "github"
       }
     },
     "systems": {
